@@ -1,4 +1,6 @@
 require('../lib/node_loader');
+var AWS = require('../lib/core');
+
 module.exports = {
   ACM: require('./acm'),
   APIGateway: require('./apigateway'),
@@ -11,7 +13,6 @@ module.exports = {
   CloudWatch: require('./cloudwatch'),
   CloudWatchEvents: require('./cloudwatchevents'),
   CloudWatchLogs: require('./cloudwatchlogs'),
-  CodeBuild: require('./codebuild'),
   CodeCommit: require('./codecommit'),
   CodeDeploy: require('./codedeploy'),
   CodePipeline: require('./codepipeline'),
@@ -36,7 +37,6 @@ module.exports = {
   ElasticTranscoder: require('./elastictranscoder'),
   Firehose: require('./firehose'),
   GameLift: require('./gamelift'),
-  IAM: require('./iam'),
   Inspector: require('./inspector'),
   Iot: require('./iot'),
   IotData: require('./iotdata'),
@@ -64,17 +64,5 @@ module.exports = {
   StorageGateway: require('./storagegateway'),
   STS: require('./sts'),
   WAF: require('./waf'),
-  WorkDocs: require('./workdocs'),
-  LexModelBuildingService: require('./lexmodelbuildingservice'),
-  Pricing: require('./pricing'),
-  CostExplorer: require('./costexplorer'),
-  MediaStoreData: require('./mediastoredata'),
-  Comprehend: require('./comprehend'),
-  KinesisVideoArchivedMedia: require('./kinesisvideoarchivedmedia'),
-  KinesisVideoMedia: require('./kinesisvideomedia'),
-  KinesisVideo: require('./kinesisvideo'),
-  Translate: require('./translate'),
-  ResourceGroups: require('./resourcegroups'),
-  SecretsManager: require('./secretsmanager'),
-  ComprehendMedical: require('./comprehendmedical')
+  WorkDocs: require('./workdocs')
 };

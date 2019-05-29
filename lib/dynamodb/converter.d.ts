@@ -11,15 +11,9 @@ export class Converter {
         options?: Converter.ConverterOptions
     ): DynamoDB.AttributeMap;
 
-    static output(
-        data: DynamoDB.AttributeValue,
-        options?: Converter.ConverterOptions
-    ): any;
+    static output(data: DynamoDB.AttributeValue): any;
 
-    static unmarshall(
-        data: DynamoDB.AttributeMap,
-        options?: Converter.ConverterOptions
-    ): {[key: string]: any};
+    static unmarshall(data: DynamoDB.AttributeMap): {[key: string]: any};
 }
 
 export namespace Converter {
